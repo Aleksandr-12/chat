@@ -1,6 +1,6 @@
 <?php
 	session_start();//Подключение должно быть на первой строчке в коде, иначе появится ошибка
-	$db = mysqli_connect("localhost","wertual_root","id85P60c");
+	$db = mysqli_connect("localhost","root","");
 
 	mysqli_select_db($db,"wertual_chat");
 
