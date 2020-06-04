@@ -1,0 +1,564 @@
+*{
+	padding:0;
+	margin:0;
+}
+.wrapper{
+	background:#ccc;
+}
+.chat {
+
+border:1px solid #333;
+
+margin:15px;
+
+width:40%;
+
+height:70%;
+
+background:#555;
+
+color:#fff;
+
+}
+
+.chat-messages {
+
+min-height:93%;
+
+max-height:93%;
+
+overflow:auto;
+
+}
+
+.chat-messages__content {
+
+padding:1px;
+
+}
+
+.chat__message {
+
+border-left:3px solid #333;
+
+margin-top:2px;
+
+padding:2px;
+
+}
+
+.chat__message_black {
+
+border-color:#000;
+
+}
+
+.chat__message_blue {
+
+border-color:blue;
+
+}
+
+.chat__message_green {
+
+border-color:green;
+
+}
+
+.chat__message_red {
+
+border-color:red;
+
+}
+
+.chat-input {
+
+min-height:6%;
+
+}
+
+.input {
+
+font-family:arial;
+
+font-size:16px;
+
+vertical-align:middle;
+
+background:#333;
+
+color:#fff;
+
+border:0;
+
+display:inline-block;
+
+margin:1px;
+
+height:30px;
+
+}
+
+.chat-form__input {
+
+width:79%;
+
+}
+
+.chat-form__submit {
+
+width:18%;
+
+}
+.scrol-t{
+	
+	height: 412px;
+	overflow-y:auto;
+	
+}
+#messageTask{
+	
+}
+.wrap-chat{
+	width: 375px;
+	
+	
+}
+.wrap-chats{
+	width: 375px;
+	/*height: 712px;*/
+	background: #F5753C;
+	margin:30px 0 50px 90px;/**/
+}
+.top-panel{
+	background: #F5753C;
+	display:flex;
+	justify-content:space-around;
+	 align-items: center;
+}
+.top-panel h1{
+	text-align:center;
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 450;
+	font-size: 20px;
+	line-height: 26px;
+	color: #FFFFFF;
+	padding:30px 0 30px 0;
+	margin:0;
+}
+.inwraper-message{
+	/*background: #F5753C;*/
+	background: #fff;
+	border-radius: 30px 30px 0px 0px;
+	padding-top:15px;
+}
+.wraper-message{
+	overflow-y:auto;
+	height: 412px;
+	
+	background: #fff;
+	padding:48px 50px 26px 15px;
+}
+.chat-message{
+	background: rgba(235, 250, 254, 0.56);
+	border-radius: 15px 15px 15px 0px;
+	padding: 14px 16px 25px 16px;
+	margin-bottom:53px;
+	
+}
+.chat-message:last-child{
+	margin:0;
+}
+.chat-message h3{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 450;
+	font-size: 16px;
+	line-height: 21px;
+	/* identical to box height */
+	color: #F5753C;
+}
+.chat-message p{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+
+	color: #333333;
+}
+.chat-form__subm{
+	float:right;
+	width:  33px; 
+	height: 33px;
+	text-indent: -1000em;
+	cursor: pointer;
+	cursor: hand;
+	margin: 0 0 0 0;
+	padding:0;
+	border: 0;
+	background: transparent url('../img/Vector.png') no-repeat center center;
+	outline:0;
+}
+.bottom-panel{
+	border-top:0.5px solid rgba(51, 51, 51, 0.36);
+	background:#fff;
+	height:76px;
+	padding:14px 20px 0 15px;
+}
+.chat-form__inpt{
+	border:0;
+	outline:0;
+	
+}
+.date-time{
+	float:right;
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+
+	color: rgba(185, 185, 185, 0.52);
+
+	opacity: 0.68;
+}
+.bottom-panel-task{
+	display:flex;
+	justify-content:space-around;
+	 align-items: center;
+	height:76px;
+	background: #F5753C;
+}
+.chat-of-tasks{
+	width:  33px; 
+	height: 33px;
+	text-indent: -1000em;
+	cursor: pointer;
+	cursor: hand;
+	margin: 0 0 0 0;
+	padding:0;
+	border: 0;
+	background: transparent url('../img/chat.png') no-repeat center center;
+	outline:0;
+}
+.chat-task-submit{
+	
+	cursor: pointer;
+	cursor: hand;
+	margin: 0 0 0 0;
+	padding:0;
+	border: 0;
+	color:#fff;
+	background: #F5753C;
+	outline:0;
+}
+.chat-tasks{
+	width:  33px; 
+	height: 33px;
+	text-indent: -1000em;
+	cursor: pointer;
+	cursor: hand;
+	margin: 0 0 0 0;
+	padding:0;
+	border: 0;
+	background: transparent url('../img/task.png') no-repeat center center;
+	outline:0;
+}
+.circusImg{
+	border-radius:50%;
+	width: 45px; 
+	height: 45px;
+	float:left;
+}
+.inner-chat-message{
+	cursor:pointer;
+	border-bottom:0.5px solid rgba(51, 51, 51, 0.36);
+	margin:0 0 30px 70px;
+}
+
+.inner-chat-message p{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 450;
+	font-size: 14px;
+	line-height: 18px;
+	color: #333333;
+}
+.notifTask{
+	background:rgba(51, 51, 51, 0.36)
+}
+
+.inner-chat{
+	cursor:pointer;
+	border-bottom:0.5px solid rgba(51, 51, 51, 0.36);
+	margin:0 0 30px 70px;
+}
+.top-notification{
+	position:relative;
+}
+.inner-notif{
+	text-align:center;
+	font-size:7px;
+	color:#fff;
+}
+.inner-notif{
+	position:absolute;
+	border-radius:50%;
+	right:-2px;
+	width:11px;
+	height:11px;
+	background: #2A4AFE;
+	z-index:10000;
+}
+.wrap-notif-chat{
+	position:relative;
+}
+.notifChat{
+	position:absolute;
+	border-radius:50%;
+	top: 23px;
+    right: -4px;
+	width:11px;
+	height:11px;
+	background: #2A4AFE;
+	z-index:10000;
+}
+.fl-div{
+	justify-content:space-between;
+	align-items: center;
+	display:flex;
+	
+}
+.nick-clck,.circusImg{
+	cursor:pointer;
+}
+.fl-div span{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* identical to box height */
+	color: rgba(54, 54, 54, 0.36);
+	margin-bottom:7px;
+}
+
+.inner-chat p{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: 450;
+	font-size: 14px;
+	line-height: 18px;
+	color: #333333;
+}
+.top-panel-task-one{
+	background:#fff;
+}
+.circusImgTask{
+	border-radius: 5px 5px 5px 5px;
+	width: 70px;
+	height: 73px;
+	float:left;
+	margin:0 0 0 20px;
+}
+.inner-chat-task{
+	/*border-bottom:0.5px solid rgba(51, 51, 51, 0.36);*/
+	margin:0 20px 30px 105px;
+}
+.fl-div h3{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #363636;
+}
+.inner-chat-task p{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #333333;
+}
+.inner-chat-task h1{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: right;
+	color: #363636;
+}
+
+.menu{
+	height:56px;
+	justify-content:space-around;
+	align-items: center;
+	display:flex;
+	border-top:0.5px solid #C4C4C4;
+	border-bottom:0.5px solid #C4C4C4;
+	margin-bottom:20px;
+}
+.menu-chat-active img{
+	
+}
+.menu-active:after{
+	display:block;
+	 content: '';
+     width:100%;
+      background-color: #EE6C32;  
+     height:2px;
+    position:relative;
+	top:15px;
+}
+
+.menu-active{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	color: #EE6C32;
+}
+.menu-chat{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+
+	color: rgba(185, 185, 185, 0.52);
+}
+.img-grascale{
+	filter: grayscale(100%); 
+      -webkit-filter: grayscale(100%);
+}
+.chat-img{
+	cursor:pointer;
+	/*background:url('../img/mini-chat.png') no-repeat center left;*/
+	padding:0 0 30px 20px;
+}
+
+.chat-task{
+	cursor:pointer;
+	/*background:url('../img/mini-task.png') no-repeat center left;*/
+	padding:0 0 0 20px;
+}
+
+.wraper-message-task{
+	overflow-y:auto;
+	height: 412px;
+	border-radius: 30px 30px 0px 0px;
+	background: #fff;
+	padding:48px 0 26px 0;
+}
+.tems-user{
+	font-weight:600;
+	font-size:18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-input-placeholder {
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* identical to box height */
+
+
+	color: rgba(51, 51, 51, 0.2);
+}
+::-moz-placeholder{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* identical to box height */
+
+
+	color: rgba(51, 51, 51, 0.2);
+}
+:-moz-placeholder{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* identical to box height */
+
+
+	color: rgba(51, 51, 51, 0.2);
+}
+:-ms-input-placeholder{
+	font-family: Futura PT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* identical to box height */
+
+
+	color: rgba(51, 51, 51, 0.2);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+   
+    overflow: scroll;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 0 auto;
+   position:relative;
+    width:375px;
+ 
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+	
+}
+.close_modal_window {
+	position:absolute;
+	left:375px;
+	top:0;
+}
+
+
+
+
+
+
+
+
+
